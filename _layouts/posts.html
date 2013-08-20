@@ -2,7 +2,18 @@
 layout: default
 ---
 
+<ul class="pager">
+    {% if page.previous.url %}
+          <li class="previous"><a href="{{page.previous.url}}">&larr; Previous post ({{page.previous.title}})</a></li>
+    {% endif %}
+    {% if page.next.url %}
+        <li class="next"><a href="{{page.next.url}}">Newer post ({{page.next.title}}) &rarr;</a></li>
+    {% endif %}
+</ul>
+
 {{ content }}
+
+<hr style="margin-top: 10%">
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
