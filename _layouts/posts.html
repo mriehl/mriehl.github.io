@@ -13,12 +13,18 @@ layout: default
 
 {{ content }}
 
+
 <hr style="margin-top: 10%">
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
+    var disqus_identifier = function(text){
+        text = text.replace(/[^a-zA-Z0-9\s]/g,"");
+        text = text.toLowerCase();
+        return text.replace(/\s/g,'-');
+    }('{{page.title}}');
     var disqus_shortname = 'mriehlgithubio';
-    /* * * DON'T EDIT BELOW THIS LINE * * */
+
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
