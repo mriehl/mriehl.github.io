@@ -2,45 +2,65 @@
 layout: default
 title: max.riehl.io
 ---
-
 <div class="jumbotron">
   <h1>Maximilien Riehl</h1>
-  <p class="lead">
-    I'm a software developer based in Berlin.
-  </p>
+  <p class="lead">I'm a software developer based in Berlin.</p>
 </div>
 
-<h2><a class="incognito" href="http://glyphicons.com/"><span class="glyphicon glyphicon-bullhorn"></span></a> Latest news</h2>
-  {% for post in site.posts limit:2 %}
-    <p>
-      <a href="{{ post.url }}">{{ post.title }}</a> from {{ post.date | date: "%-d %B %Y" }}
-    </p>
-  {% endfor %}
-
+<h2>
+  <a class="incognito" href="http://glyphicons.com/">
+    <span class="glyphicon glyphicon-bullhorn"></span>
+  </a>
+  Latest news
+</h2>
+{% for post in site.posts limit:2 %}
+<p>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  from {{ post.date | date: "%-d %B %Y" }}
+</p>
+{% endfor %}
 <hr>
 
 <div class="row">
   <div class="col-lg-6">
-    <h2><a class="incognito" href="http://glyphicons.com/"><span class="glyphicon glyphicon-user"></span></a> About me</h2>
-      Hi, I'm max!
-      I develop in Python, Java and C++ mainly.<br/>
-      Things I love: <br/>
-      <ul>
-        <li>Working with agile and DevOps minded people</li>
-        <li>Automation and especially continuous integration/continuous delivery</li>
-        <li>Test-driven development</li>
-        <li>Clean code</li>
-        <li>Challenging problems</li>
-      </ul>
+    <h2>
+      <a class="incognito" href="http://glyphicons.com/">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+      About me
+    </h2>
+    Hi, I'm max!
+    I develop in Python, Java and C++ mainly.
+    <br/>
+    Things I love:
+    <br/>
+    <ul>
+      <li>Working with agile and DevOps minded people</li>
+      <li>
+        Automation and especially continuous integration/continuous delivery
+      </li>
+      <li>Test-driven development</li>
+      <li>Clean code</li>
+      <li>Challenging problems</li>
+    </ul>
     I'm also a heavy hitting moviegoer and (classical music / heavy metal) enthusiast.
   </div>
   <div class="col-lg-6">
-    <h2><a class="incognito" href="http://glyphicons.com/"><span class="glyphicon glyphicon-wrench"></span></a> What I do</h2>
-      My current position involves a lot of infrastructure as code,
-      especially so for deployment and server orchestration.<br/>
-      I contribute to <a href="http://yadt-project.org">YADT</a>
-      and work on other data center automation topics.<br/>
-      I am also pursuing a master in computer science at the <em>Freie Universit&auml;t Berlin</em> after
+    <h2>
+      <a class="incognito" href="http://glyphicons.com/">
+        <span class="glyphicon glyphicon-wrench"></span>
+      </a>
+      What I do
+    </h2>
+    My current position involves a lot of infrastructure as code,
+      especially so for deployment and server orchestration.
+    <br/>
+    I contribute to
+    <a href="http://yadt-project.org">YADT</a>
+    and work on other data center automation topics.
+    <br/>
+    I am also pursuing a master in computer science at the <em>Freie Universit&auml;t Berlin</em>
+    after
       having finished my bachelor thesis on continuous delivery.
   </div>
 </div>

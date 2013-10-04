@@ -4,11 +4,13 @@ title: blog @ max.riehl.io
 ---
 <h1>Blog posts</h1>
 
-<ul style="list-style-type:none;">
-  {% for post in site.posts %}
-    <li>
-      <p>{{ post.content | split: '<!-- more -->' | first }}</p>
-      <a class="silent" href="{{ post.url }}">..continue reading..</a>
+<ul class="list-group">
+    {% for post in site.posts %}
+    <li class="list-group-item">
+        <p>
+            {{ post.content | split: '<!-- more -->' | first }}
+        </p>
+        <a class="silent" href="{{ post.url }}">..continue reading..</a>
     </li>
-  {% endfor %}
+    {% endfor %}
 </ul>
