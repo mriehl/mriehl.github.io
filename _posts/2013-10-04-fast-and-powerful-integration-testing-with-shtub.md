@@ -10,6 +10,8 @@ YADT is a tool that orchestrates deployments and servers using the SSH
 protocol, and while we use the Twisted framework which has a nice SSH implementation,
 we're using subprocess calls to run the linux openssh program.
 
+<!-- more -->
+
 One a sidenote twisted conch is really interesting, but hostbased authentication is difficult
 and [it seems to be impossible to get extended data from the client](http://stackoverflow.com/questions/7937651/receiving-extended-data-with-ssh-using-twisted-conch-as-client)
 while the openssh client magically does all this and more.
