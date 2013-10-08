@@ -4,7 +4,7 @@ title: Fast and powerful integration testing with shtub
 categories: posts
 ---
 
-# Fast and powerful integration testing with shtub
+## Fast and powerful integration testing with shtub
 
 YADT is a tool that orchestrates deployments and servers using the SSH
 protocol, and while we use the Twisted framework which has a nice SSH implementation,

@@ -3,13 +3,13 @@ layout: posts
 title: (un)Security through transparency
 categories: posts
 ---
-# {{ page.title }}
+## {{ page.title }}
 There's always much talk about systems which are insecure by default. The
 usual point being made is that a not-so-tech-savvy or uninformed user
 will be running an insecure setup without ever noticing.
 But what of the (supposedly) tech savvy people that offer their skills as a service?
 <!-- more -->
-## Incompetence as a service
+### Incompetence as a service
 Hosting services are definitely not known for staying on the bleeding edge of software.
 In fact, they're not known for staying up to date either.
 But running a PHP version from 2009 while also proudly delivering a
@@ -24,7 +24,7 @@ It gets even better, when you call the helpdesk and complain about it they
 <li>Refuse to change anything because they cannot fathom <em>how it will affect their service</em></li>
 </ul>
 
-## Rolling your own
+### Rolling your own
 As a conclusion,
 
  * don't use PHP

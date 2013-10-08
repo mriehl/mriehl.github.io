@@ -3,7 +3,7 @@ layout: posts
 title: The first page&trade;
 categories: posts
 ---
-<h1>The first page&trade;</h1>
+<h2>The first page&trade;</h2>
 <p>
 I finally decided that I want to have a blog, but the usual blogging platforms
 are too bloated (and not extensible enough when you need it) for my taste.<br/>

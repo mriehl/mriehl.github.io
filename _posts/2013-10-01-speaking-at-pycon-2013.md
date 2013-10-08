@@ -3,7 +3,7 @@ layout: posts
 title: Speaking at PyConDE 2013
 categories: posts
 ---
-<h1>I'll be at PyconDE 2013 in Cologne</h1>
+<h2>I'll be at PyconDE 2013 in Cologne</h2>
 <p>
 I submitted a talk with one of my YADT developer colleagues.
 He is a developer with a strong operations background while I am a developer with a strong QA background, which will (hopefully)

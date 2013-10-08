@@ -4,7 +4,7 @@ title: DevOps regression test
 categories: posts
 ---
 
-# DevOps regression test: tackle challenging problems
+## DevOps regression test: tackle challenging problems
 
 An easy way to determine if DevOps is working for you is tackling challenging
 problems. So challenging, in fact, that it would be impossible to succeed unless
@@ -14,7 +14,7 @@ you've already failed the test).
 
 A daring gambit you say? I also thought so. But not so much.
 <!-- more -->
-## Full throttle
+### Full throttle
 Our company decided to do such a thing. Ambitious goal (moving a lot of VMs around),
 little time, and all this is in an environment with a lot of change.
 
@@ -24,7 +24,7 @@ In order for this to work, we currently have a 3-day camp going on where basical
 is dedicated to making progress on the migration.
 
 
-## Preparations and aces up the sleeve
+### Preparations and aces up the sleeve
 
 The stage is set up nicely (having at least one scrum master in the driving force seems to help a lot).
 Solid documentation was made available, and basically anyone can do everything (him|her)self.
@@ -38,7 +38,7 @@ VM needs a bigger hard drive? Edit a file.
 
 Host has a new FQDN? Edit a file.
 
-## Some random thoughts so far
+### Some random thoughts so far
  * It feels awesome working with so many people and just bashing through the issues
  * Coworking and pairing is at an all-time high
  * We are making good progress on all fronts

@@ -1,7 +1,10 @@
-a.silent {
-    color: #A9A9A9;
-}
-
 a.incognito {
     color: #000000;
+}
+
+/*
+Add spacing when row sections follow each other (e.G. blog / event lists)
+*/
+.row + .row {
+    margin-top: 15px;
 }

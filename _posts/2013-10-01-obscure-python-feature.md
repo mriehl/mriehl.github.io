@@ -3,7 +3,7 @@ layout: posts
 title: An obscure python loop feature
 categories: posts
 ---
-<h1>{{ page.title }}</h1>
+<h2>{{ page.title }}</h2>
 I just stumbled over one of python's dirty little secrets while going through the PySNMP examples.
 SNMP is a very cool protocol because it's blazing fast, but boy is it ugly to use. PySNMP stays
 true by also exposing a difficult to use API. Say hello to
