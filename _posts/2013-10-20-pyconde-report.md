@@ -36,7 +36,7 @@ hell of a short timeframe to talk about something). There were mostly one hour o
 The catering was the worst I ever encountered at a conference though, so that's something to keep in mind.
 There was either coffe or juice (no club mate!!!) but only downstairs in one out of two buildings, so just hanging around in the conference
 area talking to people was not really an option.
-And the attendees were really the highlight, because Pycon attracts everyone, from low level optimizers to scientists
+And the attendees really were the highlight, because Pycon attracts everyone, from low level optimizers to scientists
 and web developers.
 
 ### See you in Berlin!
