@@ -37,3 +37,6 @@ There was either coffe or juice (no club mate!!!) but only downstairs in one out
 area talking to people was not really an option.
 And the attendees were really the highlight, because Pycon attracts everyone, from low level optimizers to scientists
 and web developers.
+
+### See you in Berlin!
+I am looking forward to PyconDE 2014 which will be in Berlin.
