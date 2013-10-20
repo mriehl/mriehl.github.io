@@ -3,7 +3,8 @@ layout: posts
 title: PyconDE report
 categories: posts
 ---
-## {{ page.title }}
+
+<h2> {{ page.title }} </h2>
 
 I attended PyconDE 2013 in Cologne, Germany. I also went last year in Leipzig.
 
