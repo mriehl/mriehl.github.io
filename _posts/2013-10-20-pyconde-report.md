@@ -10,7 +10,7 @@ I attended PyconDE 2013 in Cologne, Germany. I also went last year in Leipzig.
 
 <!-- more -->
 
-I attended to 2 PyCons and so far, and I was never disappointed. PyCon is one of the few conferences where, even as a speaker, 
+I attended to 2 PyCons and so far, and I was never disappointed even though PyCon is one of the few conferences where, even as a speaker, 
 you're going to have to buy a ticket, so you tend to expect the best.
 The talks were overall good, with a few highlights mixed in (I'll get to that in a minuted) but also a few lowlights
 like a project manager straight out of a time machine explaining how he gets small teams to work "efficiently".
