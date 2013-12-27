@@ -13,16 +13,17 @@ But what of the (supposedly) tech savvy people that offer their skills as a serv
 Hosting services are definitely not known for staying on the bleeding edge of software.
 In fact, they're not known for staying up to date either.
 But running a PHP version from 2009 while also proudly delivering a
-<code>
+```
 x-powered-by $php-version-from-2009
-</code>
+```
 header to every get request is something new entirely.
 It gets even better, when you call the helpdesk and complain about it they
-<ul>
-<li>Don't understand what a header is</li>
-<li>Don't understand why it is problematic to expose this header</li>
-<li>Refuse to change anything because they cannot fathom <em>how it will affect their service</em></li>
-</ul>
+
+
+* Don't understand what a header is
+* Don't understand why it is problematic to expose this header
+* Refuse to change anything because they cannot fathom _how it will affect their service_
+
 
 ### Rolling your own
 As a conclusion,
