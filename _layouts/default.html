@@ -11,61 +11,59 @@
   <link href="/css/style.css" rel="stylesheet" type="text/css"></head>
 <body>
 
-  <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">max.riehl.io</a>
-      </div>
+  <nav class="navbar navbar-default " role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">max.riehl.io</a>
+    </div>
 
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="/blog/">Blog</a>
-          </li>
-          <li>
-            <a href="http://osrc.dfm.io/mriehl">OSRC</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Projects/Contributions <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a target=_blank href="http://github.com/mriehl?tab=repositories">Personal projects</a>
-              </li>
-              <li>
-                <a target=_blank href="http://github.com/yadt">Yadt</a>
-              </li>
-              <li>
-                <a target=_blank href="http://github.com/pybuilder">Pybuilder</a>
-              </li>
-              <li>
-                <a target=_blank href="http://github.com/ImmobilienScout24/livestatus_service">Livestatus-service</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="mailto:max@riehl.io" target="_top">Contact me</a>
-          </li>
-        </ul>
+    <div class="collapse navbar-collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
+        <li>
+          <a href="http://osrc.dfm.io/mriehl">OSRC</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Projects/Contributions <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a target=_blank href="http://github.com/mriehl?tab=repositories">Personal projects</a>
+            </li>
+            <li>
+              <a target=_blank href="http://github.com/yadt">Yadt</a>
+            </li>
+            <li>
+              <a target=_blank href="http://github.com/pybuilder">Pybuilder</a>
+            </li>
+            <li>
+              <a target=_blank href="http://github.com/ImmobilienScout24/livestatus_service">Livestatus-service</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="mailto:max@riehl.io" target="_top">Contact me</a>
+        </li>
+      </ul>
 
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="/legals/">Legals</a>
-          </li>
-          <li>
-            <a href="/legals/data-protection.html">Data protection</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/legals/">Legals</a>
+        </li>
+        <li>
+          <a href="/legals/data-protection.html">Data protection</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="container">{{ content }}</div>
 
