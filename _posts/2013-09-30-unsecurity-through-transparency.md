@@ -13,9 +13,10 @@ But what of the (supposedly) tech savvy people that offer their skills as a serv
 Hosting services are definitely not known for staying on the bleeding edge of software.
 In fact, they're not known for staying up to date either.
 But running a PHP version from 2009 while also proudly delivering a
-```
+<pre><code>
 x-powered-by $php-version-from-2009
-```
+</code></pre>
+
 header to every get request is something new entirely.
 It gets even better, when you call the helpdesk and complain about it they
 

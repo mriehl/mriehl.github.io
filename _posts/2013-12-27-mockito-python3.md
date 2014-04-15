@@ -9,7 +9,7 @@ categories: posts
 In case you use mockito, you have probably noticed that it won't install on python 3 anymore.
 <!-- more -->
 Let's check it out in a vagrant box.
-```bash
+<pre><code>
 vagrant ssh
 Last login: Fri Dec 27 11:00:09 2013 from 10.0.2.2
 
@@ -46,15 +46,14 @@ OSError: Could not build the egg.
 Cleaning up...
 Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/mockito
 Storing complete log in /root/.pip/pip.log
-```
+</code></pre>
 
 Obviously it is pulling distribute 0.6.10. Doesn't sound very bleeding edge (current distribute is 0.7.3 and that is just a wrapper since setuptools and distribute have been merged).
 
 Why is it pulling that version specifically?
 
-```bash
+<pre><code>
 [vagrant@localhost ~]$ wget https://pypi.python.org/packages/source/m/mockito/mockito-0.5.2.tar.gz
-
 [vagrant@localhost ~]$ tar xzvf mockito-0.5.2.tar.gz
 [...]
 [vagrant@localhost ~]$ cd mockito-0.5.2
@@ -63,7 +62,8 @@ distribute_setup.py:49:DEFAULT_VERSION = "0.6.10"
 [vagrant@localhost mockito-0.5.2]$ grep use_setuptools setup.py 
 from distribute_setup import use_setuptools
 use_setuptools()
-```
+</code></pre>
+
 Basically `distribute_setup` is a bootstrapping script for distribute that will download distribute. If you don't provide a `version` kwarg to `use_setuptools` then it will download the default which is a hardcoded "0.6.10".
 
 ### What you can do
