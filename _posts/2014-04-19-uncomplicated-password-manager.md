@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: An uncomplicated password manager
+title: Uncomplicated password manager
 categories: posts
 ---
 
@@ -12,7 +12,7 @@ Password managers have become a big deal with all the recent events (heartbleed,
 ### My gripe with most password managers
 They require me to carry a blob around or (even worse) upload it to a storage service (e.G. dropbox). They're not usable from the command line. And they're (mostly) awkward on a mobile device.
 
-### Enter vault
+### Enter the vault
 
 I'm using [vault](https://github.com/jcoglan/vault) with a few additions.
 The basic idea is that passwords are computed from a secret (your master key) and an arbitrary service name.
@@ -69,4 +69,6 @@ which basically just clears my password from the clipboard.
 
 ### Final result
 
-I have an extremely simple flow now when working on the command line.
+I have an extremely simple flow when working on the command line.
+
+<script type="text/javascript" src="https://asciinema.org/a/9017.js" id="asciicast-9017" async></script>
