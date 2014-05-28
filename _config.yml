@@ -1,5 +1,5 @@
 safe: true
 lsi: false
-pygments: true
+highlighter: true
 permalink: /:categories/:year-:month-:day-:title.html
 markdown: kramdown
