@@ -54,10 +54,24 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <section id="context-tldr" class="slide level1 opaque" data-background="res/firmensitz.jpg" data-background-position="center bottom">
 <h1>Context TL;DR</h1>
 <ul>
-<li class="fragment">I work at a german web shop</li>
-<li class="fragment">We love python</li>
-<li class="fragment">We're spreading the love in our department</li>
+<li class="fragment">I work at ImmobilienScout24, the leading german real estate portal</li>
+<li class="fragment">Using python for automation / infrastructure</li>
+<li class="fragment">Spreading python knowledge in the department</li>
 </ul>
+</section>
+<section id="were-not-that-small" class="slide level1">
+<h1>We're not that small</h1>
+<pre class="sourceCode python"><code class="sourceCode python">&gt;&gt;&gt; vvc = VVC(<span class="st">&quot;***************&quot;</span>)
+&gt;&gt;&gt; vvc.<span class="ot">connect</span>(<span class="st">&quot;mriehl&quot;</span>)
+&gt;&gt;&gt; <span class="dt">reduce</span>(<span class="kw">lambda</span> n, vm: n + <span class="dv">1</span>, vvc.get_all_vms(), <span class="dv">0</span>)
+<span class="dv">615</span>
+&gt;&gt;&gt; </code></pre>
+</section>
+<section id="what-do-i-do-again" class="slide level1">
+<h1>What do I do again?</h1>
+<div class="cinescript" data-typescript="demos/script-update" data-timing="demos/timing-update" data-speed="2" data-cols="120" data-rows="20" data-show-controls="false" data-font-size="auto">
+
+</div>
 </section>
 <section id="section" class="slide level1" data-background="res/enough-to-do.jpg" data-background-position="center top">
 <h1></h1>
@@ -121,8 +135,8 @@ Image credit: Aled17
 
     project.get_property(<span class="st">&#39;distutils_commands&#39;</span>).append(<span class="st">&#39;bdist_wheel&#39;</span>)</code></pre>
 </section>
-<section id="bye-bye-requirements.txt" class="slide level1">
-<h1>Bye bye requirements.txt</h1>
+<section id="requirements.txt-built-in" class="slide level1">
+<h1>requirements.txt built-in</h1>
 <pre><code>pyb install_[runtime|build]dependencies</code></pre>
 <p>and in <code>build.py</code>:</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ot">@init</span>
