@@ -74,7 +74,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 &gt;&gt;&gt; vvc.<span class="ot">connect</span>(<span class="st">&quot;mriehl&quot;</span>)
 &gt;&gt;&gt; <span class="dt">reduce</span>(<span class="kw">lambda</span> n, vm: n + <span class="dv">1</span>, vvc.get_all_vms(), <span class="dv">0</span>)
 <span class="dv">615</span>
-&gt;&gt;&gt; </code></pre>
+&gt;&gt;&gt; <span class="co"># this is one of our datacenters</span></code></pre>
 </section>
 <section id="section" class="slide level1" data-background="res/ecosystem.png" data-background-position="center center" data-background-size="65%">
 <h1></h1>
@@ -93,10 +93,10 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <section id="make-it-just-work" class="slide level1 whitetext" data-background="res/tools.jpg" data-background-size="75%">
 <h1>Make it just work™</h1>
 </section>
-<section id="make-it-just-work-1" class="slide level1">
-<h1>Make it just work™</h1>
+<section id="set-default-tasks" class="slide level1">
+<h1>Set default tasks</h1>
 <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pyb</span></code></pre>
-<p>and in <code>build.py</code>:</p>
+<p><small>and in <code>build.py</code>:</small></p>
 <pre class="sourceCode python"><code class="sourceCode python">url = <span class="st">&#39;https://github.com/yadt/yadtshell&#39;</span>
 version = <span class="st">&#39;1.8.5&#39;</span>
 
@@ -107,7 +107,7 @@ default_task = [<span class="st">&#39;clean&#39;</span>, <span class="st">&#39;a
 <span class="kw">def</span> set_properties(project):
     project.depends_on(<span class="st">&#39;hostexpand&#39;</span>)</code></pre>
 </section>
-<section id="batteries-included-plugins" class="slide level1 whitetext" data-background="res/batteries.png">
+<section id="batteries-included-plugins" class="slide level1 whitetext" data-background="res/lightsaber.jpg" data-background-size="100%" data-background-position="center center">
 <h1>Batteries included: plugins</h1>
 <ul>
 <li class="fragment">install_dependencies</li>
@@ -118,9 +118,8 @@ default_task = [<span class="st">&#39;clean&#39;</span>, <span class="st">&#39;a
 <li class="fragment">pytddmon</li>
 <li class="fragment">... and many more!</li>
 </ul>
-<div style="bottom: 0; text-align: left; opacity: 0.1">
-Image credit: Aled17
-</div>
+<!-- Image credit: Aled17 -->
+
 </section>
 <section id="key-value-based-configuration" class="slide level1">
 <h1>Key-value based configuration</h1>
