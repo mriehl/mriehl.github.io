@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>The beauty and the bias: a tale of self-delusion and fallacy</title>
+
+		<meta name="description" content="A collection of patterns in biased thinking">
+		<meta name="author" content="Maximilien Riehl">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>The beauty and the bias</h2>
+					<h4>A tale of self-delusion and fallacy</h4>
+                    <div>
+                        <img src="img/devopsdays_resized.png" class="stretch" style="border: none;"/>
+                    </div>
+					<p>
+                    <small>Maximilien Riehl / <a href=mailto:max@flatmap.ninja>max@flatmap.ninja</a> / <a href="https://twitter.com/maximilienriehl">@maximilienriehl</a> / <a href="https://github.com/mriehl">github.com/mriehl</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Obligatory introduction</h2>
+                    <p>
+                        <ul>
+                            <li>DEV at ImmobilienScout24</li>
+                            <li>infracoding (python, shell)</li>
+                            <li>Layer 7: Scala, Python, Java (meh)</li>
+                            <li>QA</li>
+                        </ul>
+                    </p>
+                    <img src="img/is24.svg" style="border: none" />
+				</section>
+
+				<section>
+					<h2>Let's talk about bias</h2>
+                    <blockquote>We do not see things as they are, but as we are ourselves.</blockquote>
+                    <p><font size="1">Attribution: anonymous</font></p>
+				</section>
+
+				<section>
+					<h2>Acknowledgements / Disclaimer</h2>
+                    <img src="img/yanld.png" class="stretch" />
+					<p>
+                        <small>You are now less dumb by David McRaney</small>
+					</p>
+				</section>
+
+                <section>
+                <section>
+                   <h1>Ego depletion</h2>
+                </section>
+                <section class="fragments">
+                    <h2>Some(research) - Baumeister et al.</h2>
+                    <div class="fragment">
+                        <img src="img/cookies_resized.png" class="stretch"/>
+                    </div>
+                    <div class="fragment">
+                    <ul>
+                        <li>Self-restraint &amp; hungry &#8658; More likely to give up early</li>
+                    </ul>
+                    </div>
+                </section>
+                <section class="fragments" data-transition="slide-in fade-out">
+                    <h2>The dumb animal, the mana bar, and You</h2>
+                    <div class="fragment">
+                    <p><img class="stretch" src="img/metaphor_1.png" /></p>
+
+                    </div>
+                </section>
+                <section data-transition="fade-in fade-out">
+                    <h2>The dumb animal, the mana bar, and You</h2>
+                    <div>
+                    <p><img class="stretch" src="img/metaphor_2.png" /></p>
+
+                    <p>
+                    <font size="1">Calcifer by inverted-typo.tumblr.com</font>
+                    </p>
+                    </div>
+                </section>
+                <section data-transition="fade-in slide-out">
+                    <h2>The dumb animal, the mana bar, and You</h2>
+                    <div>
+                    <p><img class="stretch" src="img/metaphor.png" /></p>
+
+                    <p>
+                    <font size="1">Calcifer by inverted-typo.tumblr.com</font>
+                    </p>
+                    </div>
+                </section>
+                <section>
+                    <h4>Cost: 40 mana</h4>
+                    <img class="stretch" src="img/harbinger_cat.png" />
+                </section>
+                <section class="fragments">
+                    <h2>What <strong>depletes</strong> willpower</h2>
+                    <ul>
+                    <div class="fragment"><li>Decisions</li></div>
+                    <div class="fragment"><li>Restraint</li></div>
+                    <div class="fragment"><li>Difficult tasks / executive brain functions</li></div>
+                    <div class="fragment"><li>... and way too many others</li></div>
+                    </ul>
+                    </script>
+                </section>
+                <section class="fragments">
+                    <h2>What <strong>refills</strong> willpower (?)</h2>
+                    <ul>
+                    <div class="fragment"><li>Glucose</li><img style="border: none" src="img/glucose_resized.png"/></div>
+                    <div class="fragment"><li>Sleep</li><img style="border: none" src="img/sleep_resized.png"/></div>
+                    </ul>
+                    </script>
+                </section>
+                <section class="fragments">
+                    <h2>The process model of ego depletion</h2>
+                    <div class="fragment"><img src="img/process-model-of-ego-depletion_resized.png" class="stretch" /></div>
+                </section>
+                <section class="fragments">
+                    <h2>Key takeaways</h2>
+                    <ul>
+                    <div class="fragment"><li>Willpower is not a skill</li>
+                    </div>
+                    <div class="fragment"><li>Don't spend, invest</li></div>
+                    <div class="fragment">
+                        <li>Trick the animal into working for you</li>
+                        <img src="img/carrotstick.png" />
+                    </div>
+                    <div class="fragment"><li>Eat before decisions - just in case ;-)</li></div>
+                    </ul>
+                </section>
+                </section>
+
+                <section>
+                <section>
+                    <h1>The illusion of asymmetric insight</h1>
+                </section>
+                <section class="fragments">
+                    <h2>Some(research) - Pronin, Kruger et al.</h2>
+                    <ul>
+                    <div class="fragment"><li><em>You don't know me, but I know you</em> (2001)</li></div>
+                    <div class="fragment"><li>6 studies</li></div>
+                    <div class="fragment"><li>Participants answer questions about own and close friend's "true self"</li></div>
+                    </ul>
+                </section>
+                <section class="fragments">
+                    <h2>Own "true self"</h2>
+                    <div class="fragment">
+                            <div><img src="img/Iceberg_resized.png" class="stretch" /></div>
+
+                    <font size="1">Work by Uwe Kils (GNU FDL 1.2)</font>
+                    </div>
+                </section>
+                <section class="fragments">
+                    <h2>Other's "true self"</h2>
+                    <div class="fragment">
+                            <div><img src="img/inverseIceBerg_resized.png" class="stretch" /></div>
+
+
+                    <font size="1">Editing by Stephan "photoshop" Bauer</font>
+                    </div>
+                </section>
+                <section class="fragments">
+                    <h2>Explaining the asymmetry: Personae</h2>
+                    <div class="fragment">
+                        <img src="img/hero_resized.png" class="stretch" style="border: none;" />
+                    </div>
+                </section>
+                <section class="fragments">
+                    <h2>Consequences of asymmetric insight</h2>
+                    <ul>
+                    <div class="fragment"><li>Failure to see the nuances in others (diversity WTF)</li></div>
+                    <div class="fragment"><li>Enhances subjective bias</li></div>
+                    <div class="fragment"><li>Especially so in crowds</li></div>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Asymmetric insight in crowds</h2>
+                    <img src="img/crowd.png" class="stretch" />
+                </section>
+                <section class="fragments">
+                    <h2>Consequences of asymmetric insight</h2>
+                    <ul>
+                    <div><li>Failure to see the nuances in others (diversity WTF)</li></div>
+                    <div><li>Enhances subjective bias</li></div>
+                    <div><li>Especially so in crowds</li></div>
+                    <div class="fragment"><li>Also true on a "team level"</li></div>
+                    </ul>
+                </section>
+                <section class="fragments">
+                    <h2>Key takeaways / outlook</h2>
+                    <ul>
+                    <div class="fragment"><li>You <strong>want</strong> to get rid of asymmetric insight!</li></div>
+                    <div class="fragment"><li>Robbers cave experiment (think "Lord of the flies")</li></div>
+                    <div class="fragment"><li>Fix: Working together to solve common problems</li></div>
+                    <div class="fragment"><li>This is <strong>exactly</strong> what DevOps is about!</li></div>
+                    <div class="fragment"><li>Individualism is (probably) culture specific</li></div>
+                    </ul>
+                </section>
+                </section>
+
+
+                <section>
+                <section>
+                    <h1>The post-hoc fallacy</h1>
+                </section>
+                <section class="fragments">
+                <h2>"Post-hoc" Etymology</h2>
+                <ul>
+                <div class="fragment"><li>Post hoc ergo propter hoc</li></div>
+                <div class="fragment"><li>"After this, therefore because of this"</li></div>
+                </ul>
+                </section>
+                <section class="fragments">
+                <h2>Modern examples</h2>
+                <ul>
+                <div class="fragment"><li>Superstitious athletes</li></div>
+                <ul>
+                <div class="fragment"><li>Chicken man!</li></div>
+                </ul>
+                <div class="fragment"><li>“You know what they call alternative medicine that's been proved to work? - Medicine.” <font size="3">(Tim Minchin)</font></li></div>
+                <div class="fragment"><li>Astrology</li></div>
+                <div class="fragment"><li>#PowerBalance</li></div>
+                <div class="fragment"><img src="img/powerbalance2.png" class="stretch" style="border: none" /></div>
+                </ul>
+                </section>
+                <section class="fragments">
+                <h2>Vending machines</h2>
+                <div class="fragment">
+                <div><img src="img/vending_resized.png" /></div>
+                <font size="1">Image by PCHS-NJROTC (GFDL)</font>
+                </div>
+                </section>
+                <section class="fragments">
+                <h2>Why are we so vulnerable to post-hoc fallacies?</h2>
+                <div class="fragment">
+                <img src="img/shrooms.png" class="stretch" style="border:none;"/>
+                </div>
+                </section>
+                <section class="fragments">
+                <h2>Why are we so vulnerable to post-hoc fallacies?</h2>
+                <ul>
+                <div class="fragment"><li>Evolutionary advantage</li></div>
+                <ul>
+                <div class="fragment"><li>Player 1</li></div>
+                <ul>
+                <div class="fragment"><li>Eats a mushroom, gets sick.</div>
+                <div class="fragment"><li>Does a double blind study on the mushroom type.</div>
+                </ul>
+                <div class="fragment"><li>Player 2</li></div>
+                <ul>
+                <div class="fragment"><li>Eats a mushroom, gets sick.</div>
+                <div class="fragment"><li>Stops eating mushrooms.</div>
+                </ul>
+                </ul>
+                <div class="fragment"><li>Self-enhancing bias / illusion of control</li></div>
+                </ul>
+                </section>
+                <section class="fragments">
+                <h2>Key takeaways</h2>
+                <ul>
+                <div class="fragment"><li>This is usually wrong in IT</li></div>
+                <div class="fragment"><li>When in doubt: double blind study that sh*t</li></div>
+                <div class="fragment"><li>Try to avoid snake oil</li></div>
+                <div class="fragment"><li>Placebo effect can be useful for internal processes</li></div>
+                </ul>
+                </section>
+                <section>
+                <h2>Self-healing with alternative medicine</h2>
+                <img src="img/pills_resized.png" />
+                <div>
+                <p><font size="1">Image credit: David Richfield (GFDL)</font>
+                </div>
+                </section>
+                <section>
+                <h2>Self-healing with awesome (next step)</h2>
+                <div><img src="img/yoda_resized.png" /></div>
+                </section>
+                </section>
+
+                <section class="fragments">
+                <h2>Thanks!</h2>
+                <div class="fragment"><p>Any questions?</p></div>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
