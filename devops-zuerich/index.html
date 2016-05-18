@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Your feedback is in another castle</title>
+
+    <meta name="description" content="Antifragile patterns in the IT industry">
+    <meta name="author" content="Maximilien Riehl">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h2>Your feedback is in another castle</h2>
+            <h4>Antifragility and feedback loops in the IT industry</h4>
+            <p>
+                <small>Maximilien Riehl / <a href=mailto:max@flatmap.ninja>max@flatmap.ninja</a> / <a
+                        href="https://twitter.com/maximilienriehl">@maximilienriehl</a> / <a
+                        href="https://github.com/mriehl">github.com/mriehl</a></small>
+            </p>
+            <div>
+                <img src="img/scout24.png" class="stretch" style="border: none;"/>
+            </div>
+        </section>
+
+        <section>
+            <section class="fragments">
+                <h2>Flight plan</h2>
+                <ul>
+                <div class="fragment">
+                  <li>Antifragility is a desirable property</li>
+                </div>
+                <div class="fragment">
+                  <li>We can't have it unless we change a lot</li>
+                </div>
+                <div class="fragment">
+                  <li>We need more DevOps-ish culture</li>
+                </div>
+                </ul>
+            </section>
+            <section class="fragments">
+                <h2>A primer on antifragility</h2>
+                <div class="fragment"><img src="img/antifragile-book.jpg"/></div>
+            </section>
+
+
+            <section class="fragments">
+                <h3>Black swan events</h3>
+                <div class="fragment">
+                    <img src="img/swan.jpg" class="stretch"/>
+                </div>
+                <ul>
+                    <div class="fragment">
+                        <li>Surprise / Outlier</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Major effect and consequences</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Unpredictable unless in hindsight</li>
+                    </div>
+                </ul>
+            </section>
+
+            <section class="fragments">
+                <h3>The fragile vs. black swan event</h3>
+                <img src="img/crate-fragile.jpg"/>
+                <div></div>
+                <ul>
+                    <div class="fragment">
+                        <li>Best case: crate remains unchanged</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Worst case: crate has defects</li>
+                    </div>
+                </ul>
+            </section>
+
+            <section class="fragments">
+                <h3>The antifragile vs. black swan event</h3>
+                <img src="img/crate-antifragile.jpg" class="stretch"/>
+                <ul>
+                    <div class="fragment">
+                        <li>Worst case: crate remains unchanged</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Best case: crate improves</li>
+                    </div>
+                </ul>
+                <p><font size="1">Illustration by Tara Jacoby</font></p>
+            </section>
+
+            <section class="fragments">
+                <img src="img/power.jpg" class="stretch"/>
+            </section>
+
+            <section class="fragments">
+                <h3>Immune system vs black swan events</h3>
+                <img src="img/immune.jpg" class="stretch"/>
+                <p><font size="1">Image credit: DO11.10, GFDL</font></p>
+            </section>
+
+            <section class="fragments">
+                <h3>Thus, limitations</h3>
+                <ul>
+                    <div class="fragment">
+                        <li>Harm's only good up to a certain point</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Antifragility is an emergent effect</li>
+                    </div>
+                </ul>
+            </section>
+
+            <section class="fragments">
+                <h4>Emergent effects in software - example</h4>
+                <div class="fragment"><img src="img/tensorflow.png"/></div>
+                <div class="fragment">
+                <pre><code data-trim data-noescape>
+                    auto output_mat = output->flat_outer_dims&lt;T&gt;();
+                </code></pre>
+                </div>
+            </section>
+
+            <section class="fragments">
+                <h3>Antifragile system: evolution</h3>
+                <div class="fragment"><img src="img/evo1.png"/></div>
+                <div class="fragment"><img src="img/evo2.png"/></div>
+            </section>
+
+
+            <section class="fragments">
+                <h3>Key insights</h3>
+                <ul>
+                    <div class="fragment">
+                        <li>The antifragile slowly adapts to black swan events</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Relies on tinkering (mutation)</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Pieces from the system <strong>must</strong> be fragile</li>
+                    </div>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section class="fragments">
+                <h2>Antifragility and feedback</h2>
+                <div class="fragment"><img src="img/evo2.png"/></div>
+                <div class="fragment"><p><font color="red">This is a feedback loop!</font></p></div>
+            </section>
+            <section class="fragments">
+                <h3>The problem with feedback</h3>
+                <div class="fragment"><img src="img/politician.jpg"/></div>
+                <div class="fragment"><p>We should go to war!</p></div>
+            </section>
+            <section class="fragments">
+                <h4>The blindfolded immortal bus driver problem</h4>
+                <ul>
+                    <div class="fragment">
+                        <li>No problem finding a new job</li>
+                    </div>
+                    <div class="fragment">
+                        <li>No personal risk</li>
+                    </div>
+                    <div class="fragment">
+                        <li>No financial downside</li>
+                    </div>
+                </ul>
+                <div class="fragment"><h4><font color="red">Why would you learn from that experience?</font></h4></div>
+            </section>
+            <section class="fragments">
+                <h4>Feedback models (ethics)</h4>
+                <ul>
+                    <div class="fragment">
+                        <li><p>No skin in the game</p></li>
+                    </div>
+                    <div class="fragment">
+                        <ul>
+                            <li><p>Your bad decisions lead to other people's harm</p></li>
+                            <ul>
+                    </div>
+                    <div class="fragment">
+                        <li><p>Skin in the game</p></li>
+                    </div>
+                    <div class="fragment">
+                        <ul>
+                            <li><p>Your bad decisions lead to your own harm</p></li>
+                            <ul>
+                    </div>
+                    <div class="fragment">
+                        <li><p>Soul in the game</p></li>
+                    </div>
+                    <div class="fragment">
+                        <ul>
+                            <li><p>Your bad decisions <strong>for the sake of others</strong> lead to your own harm</p></li>
+                            <ul>
+                    </div>
+                </ul>
+            </section>
+            <section class="fragments">
+                <h3>The IT industry at large: no skin in the game</h3>
+            </section>
+            <section class="fragments">
+                <h4>"Data-driven" not ideal</h4>
+                <div class="fragment">
+                <pre><code data-trim data-noescape>
+                    &raquo; curl -s https://en.wikipedia.org/wiki/List_of_cognitive_biases \
+                    | grep '&lt;td&gt;&lt;b&gt;&lt;a href=&quot;/wiki/' | wc -l
+                    154
+                </code></pre>
+                </div>
+                <div class="fragment">
+                  How accurate is data...
+                </div>
+                <div class="fragment">
+                  when there is strong incentive to make it look better?
+                </div>
+            </section>
+            <section class="fragments">
+                <h4>Armor plating engineer</h4>
+                <div class="fragment">
+                  <img src="img/plane.jpg" class="stretch" />
+                </div>
+                <div class="fragment">
+                    If Google (survivor) does X, then X is good for me too?
+                </div>
+                <p><font size="1">© Howard Wainer, Lawrence Erlbaum, 1977</font></p>
+            </section>
+            <section class="fragments">
+                <h4>Cargo cults</h4>
+                <div class="fragment">
+                  <img src="img/cargo-cult.jpg" class="stretch" />
+                </div>
+                <div class="fragment">
+                    We pick up the visible things (tools) but fail to examine the role they play.
+                </div>
+            </section>
+            <section class="fragments">
+                <h4>Reproducibility in 1935</h4>
+                <div class="fragment">
+                  <blockquote>
+                    Paper 1: X ➡ Rats do A
+                  </blockquote>
+                </div>
+                <div class="fragment">
+                  <blockquote>
+                    Paper 2: Z ➡ Rats do A
+                  </blockquote>
+                </div>
+                <div class="fragment">
+                  <blockquote>
+                    Professor: Nope, X was already done.
+                  </blockquote>
+                </div>
+                <div class="fragment">
+                  <img src="img/thesis.jpg" class="stretch" />
+                </div>
+            </section>
+
+            <section class="fragments">
+                <h4>Dijkstra's logical firewall</h4>
+                <div class="fragment">
+                  <p>We should erect a firewall to separate</p>
+                </div>
+                <ul>
+                  <div class="fragment">
+                    <li>the correctness problem (does it conform to the spec)</li>
+                  </div>
+                  <div class="fragment">
+                    <li>from the pleasantness problem (do we want the spec)</li>
+                  </div>
+                </ul>
+                <div class="fragment"><p>Isolating product from development still sounds like a good idea?</p></div>
+            </section>
+
+            <section class="fragments">
+                <h4>Rainmaker scam</h4>
+                <div class="fragment">
+                    <img src="img/rainmaker.jpg" class="stretch" />
+                </div>
+                <ul>
+                    <div class="fragment">
+                        <li>Did "DevOps" solve your problems?</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Or did "wanting to implement DevOps" solve your problems?</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Maybe something else solved your problems...</li>
+                    </div>
+                </ul>
+            </section>
+
+            <section class="fragments">
+                <h2>Issues holding us back</h2>
+                <ul>
+                    <div class="fragment">
+                        <li>Bad/no reproducibility</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Cargo cult-ure</li>
+                    </div>
+                    <div class="fragment">
+                        <li>Separation of product and development</li>
+                    </div>
+                    <div class="fragment">
+                        <li>No or indirect harm due to bad decisions</li>
+                    </div>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section class="fragments">
+                <h2>Ideas, questions</h2>
+            </section>
+            <section class="fragments">
+                <h3>Eat your own dog food</h3>
+                <img src="img/dogfood.jpg" />
+                <div class="fragment">
+                <h5>Get some skin in the game!</h5>
+                </div>
+            </section>
+            <section class="fragments">
+                <h3>Rate fragility, not probability</h3>
+            </section>
+            <section class="fragments">
+                <h3>Optionality FTW</h3>
+            </section>
+            <section class="fragments">
+                <h3>Mistrust data by default</h3>
+                <div class="fragment">
+                <h5>Don't be the turkey</h5>
+                </div>
+            </section>
+            <section class="fragments">
+                <h2>Questions for the audience</h2>
+                <div class="fragment">
+                <h3>How do you deal with reproducibility</h3>
+                </div>
+                <ul>
+                    <div class="fragment">
+                        <li>Cultural?</li>
+                    </div>
+                    <div class="fragment">
+                            <li>Technical?</li>
+                    </div>
+                </ul>
+                <div class="fragment">
+                <h3>Do you have skin in the game?</h3>
+                </div>
+            </section>
+        </section>
+
+        <section class="fragments">
+            <h2>Thanks!</h2>
+            <div class="fragment"><p>Any questions?</p></div>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
